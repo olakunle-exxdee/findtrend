@@ -2,9 +2,9 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="bg-dark p-1 ">
-      <nav className="navbar navbar-expand-lg bg-dark navbar-dark py-4 px-3 text-center ">
-        <a href="#" className="navbar-brand text-center">
+    <footer className="bg-dark p-1 container ">
+      <nav className="navbar navbar-expand-sm bg-dark navbar-dark py-4 px-3  row ">
+        <a href="#" className="navbar-brand col col-xs-12 col-sm-4 col-md-6">
           <svg
             width="41"
             height="40"
@@ -22,26 +22,26 @@ const Footer = () => {
           Findtrend
         </a>
 
-        <div className="ms-auto" id="navmenu">
-          <ul className="navbar-nav ms-lg-auto text-center w-100">
+        <div className="ms-auto col-xs-12 col-sm-8 col-md-6" id="navmenu">
+          <ul className="navbar-nav ms-lg-auto  w-100">
             <li className="nav-item my-3 my-lg-0 ms-lg-auto ">
               <a href="#products" className="nav-link text-light">
-                About
+                Privacy Policy
               </a>
             </li>
             <li className="nav-item my-3 my-lg-0">
               <a href="#products" className="nav-link text-light">
-                How it work
+                Terms and Conditions
               </a>
             </li>
             <li className="nav-item my-3 my-lg-0 ">
               <a href="#products" className="nav-link text-light">
-                Pricing
+                Contact Us
               </a>
             </li>
             <li className="nav-item my-3 my-lg-0">
               <a href="#services" className="nav-link text-light ">
-                Solution
+                Careers
               </a>
             </li>
           </ul>

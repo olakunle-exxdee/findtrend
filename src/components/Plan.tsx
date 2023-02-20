@@ -35,7 +35,7 @@ const Plan = () => {
 
       <div className="container-fluid payment">
         <div className="row justify-content-center gap-4 my-5">
-          <div className="col col-md-6 col-xl-4 payment-element ps-5 py-4  rounded bg-light ">
+          <div className="col col-md-6 col-xl-4 payment-element ps-5 py-4 pe-5 rounded bg-light ">
             <div className="payment-header border-bottom ">
               <h3>Personal</h3>
               <p>Special first packet for all</p>
@@ -57,7 +57,7 @@ const Plan = () => {
               />
             </div>
           </div>
-          <div className="col col-md-6 col-xl-4 payment-element ps-5 py-4  rounded bg-primary">
+          <div className="col col-md-6 col-xl-4 payment-element ps-5 py-4 pe-5 rounded bg-primary">
             <div className="payment-header  border-bottom ">
               <h3>Regular</h3>
               <p>Recommended for personal pro</p>
@@ -81,7 +81,7 @@ const Plan = () => {
               />
             </div>
           </div>
-          <div className="col col-md-6 col-xl-4 payment-element ps-5 py-4  rounded bg-light">
+          <div className="col col-md-6 col-xl-4 payment-element ps-5 py-4 pe-5  rounded bg-light">
             <div className="payment-header border-bottom">
               <h3>Premium</h3>
               <p>Packet for Startup & Company</p>
