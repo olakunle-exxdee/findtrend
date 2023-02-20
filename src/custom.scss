@@ -37,6 +37,9 @@ $info: $gray200;
 }
 @import "../node_modules/bootstrap/scss/bootstrap";
 
+html {
+  scroll-behavior: smooth;
+}
 :root {
   --bs-body-font-family: "Effra-Regular";
 }
@@ -74,18 +77,28 @@ $info: $gray200;
   min-width: 80px;
   margin: 0 auto;
 }
-.li-item-wrapper {
-  margin-bottom: 5rem;
+.li-item-wrapper1 {
+  margin-bottom: 12rem;
+}
+.li-item-wrapper2 {
+  margin-bottom: 9rem;
+}
+.li-item-wrapper3 {
+  margin-bottom: 3rem;
 }
 .payment-element {
-  max-width: 340px;
-  margin: 2rem auto;
-  outline: 2px solid red;
-  padding: 2rem 0rem 2rem 3rem;
+  max-width: 320px;
+  margin: 0 auto;
 }
 
 .li-item {
-  list-style-image: url(img/tick.svg);
+  list-style: none;
+  background: url(img/tick.svg) no-repeat 2px 8px;
+  padding-left: 20px;
+  text-align: left;
+}
+.join-trending {
+  color: $green200;
 }
 
 .hero-image-wrapper {
