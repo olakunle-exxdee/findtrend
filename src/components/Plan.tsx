@@ -40,7 +40,7 @@ const Plan = () => {
             </div>
             <div className='payment-details'>
               <h3 className='fs-1 carousel-fade mt-2'>
-                ${checked ? '8' : '79'} <span className='fs-1'>/month</span>
+                ${checked ? '8' : '79'} <span className='fs-6'>/month</span>
               </h3>
               <div className='li-item-wrapper1'>
                 <li className='li-item my-4 '>Up to 5 page each group</li>
