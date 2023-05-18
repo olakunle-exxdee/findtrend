@@ -15,36 +15,40 @@ $light: $white;
 $secondary: $gray400;
 $info: $gray200;
 @font-face {
-  font-family: "Effra-Light"; /*Can be any text*/
-  src: local("Effra-Light"),
-    url("./TrialStaticFonts/Effra\ Lt.ttf") format("truetype");
+  font-family: 'Effra-Light'; /*Can be any text*/
+  src: local('Effra-Light'),
+    url('./TrialStaticFonts/Effra\ Lt.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: "Effra-Regular"; /*Can be any text*/
-  src: local("Effra-Regular"),
-    url("./TrialStaticFonts/Effra\ Rg.ttf") format("truetype");
+  font-family: 'Effra-Regular'; /*Can be any text*/
+  src: local('Effra-Regular'),
+    url('./TrialStaticFonts/Effra\ Rg.ttf') format('truetype');
 }
 @font-face {
-  font-family: "Effra-Black"; /*Can be any text*/
-  src: local("Effra-Regular"),
-    url("./TrialStaticFonts/Effra\ Blk.ttf") format("truetype");
+  font-family: 'Effra-Black'; /*Can be any text*/
+  src: local('Effra-Regular'),
+    url('./TrialStaticFonts/Effra\ Blk.ttf') format('truetype');
 }
 @font-face {
-  font-family: "Effra-Bold"; /*Can be any text*/
-  src: local("Effra-Regular"),
-    url("./TrialStaticFonts/Effra\ Bold.ttf") format("truetype");
+  font-family: 'Effra-Bold'; /*Can be any text*/
+  src: local('Effra-Regular'),
+    url('./TrialStaticFonts/Effra\ Bold.ttf') format('truetype');
 }
-@import "../node_modules/bootstrap/scss/bootstrap";
+@import '../node_modules/bootstrap/scss/bootstrap';
 
 html {
   scroll-behavior: smooth;
 }
 :root {
-  --bs-body-font-family: "Effra-Regular";
+  --bs-body-font-family: 'Effra-Regular';
+}
+
+.height {
+  min-height: 100vh;
 }
 .header-font {
-  font-family: "Effra-Black" !important;
+  font-family: 'Effra-Black' !important;
 }
 .text-heading {
   max-width: 650px;
@@ -52,11 +56,11 @@ html {
 }
 .company-heading {
   max-width: 1200px;
-  font-family: "Effra-Bold";
+  font-family: 'Effra-Bold';
   margin: 0 auto;
 }
 .company-heading2 {
-  font-family: "Effra-Bold";
+  font-family: 'Effra-Bold';
 }
 .hero-images {
   @include media-breakpoint-up(xxl) {
