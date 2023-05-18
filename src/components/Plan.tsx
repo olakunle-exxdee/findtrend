@@ -49,7 +49,7 @@ const Plan = () => {
               </div>
               <div className=''>
                 <input
-                  className='btn btn-primary rounded-pill btn-lg fs-5 fw-bold  px-5 py-3'
+                  className='btn btn-primary rounded-pill btn-lg fs-5 fw-bold  px-5 py-2 '
                   type='button'
                   value='Start Free Trial'
                 />
@@ -75,7 +75,7 @@ const Plan = () => {
               </div>
               <div className=''>
                 <input
-                  className='btn btn-dark rounded-pill btn-lg fs-5 fw-bold  px-5 py-3'
+                  className='btn btn-dark rounded-pill btn-lg fs-5 fw-bold  px-5 py-2'
                   type='button'
                   value='Start Free Trial'
                 />
@@ -102,7 +102,7 @@ const Plan = () => {
               </div>
               <div className=''>
                 <input
-                  className='btn btn-primary rounded-pill btn-lg fs-5 fw-bold  px-5 py-3'
+                  className='btn btn-primary rounded-pill btn-lg fs-5 fw-bold  px-5 py-2'
                   type='button'
                   value='Start Free Trial'
                 />
