@@ -7,7 +7,7 @@ const Plan = () => {
     setChecked(!checked);
   };
   return (
-    <section className='bg-dark p-5 '>
+    <section id='pricing' className='bg-dark p-5 '>
       <h1 className=' company-heading2 text-light display-4 py-5 text-center '>
         Get your best deal
       </h1>
@@ -82,30 +82,32 @@ const Plan = () => {
               </div>
             </div>
           </div>
-          <div className='col col-md-6 col-xl-4 payment-element ps-5 py-4 pe-5  rounded bg-light'>
-            <div className='payment-header border-bottom'>
-              <h3>Premium</h3>
-              <p>Packet for Startup & Company</p>
-            </div>
-            <div className='payment-details '>
-              <h3 className='fs-1 carousel-fade mt-2'>
-                ${checked ? '48' : '500'} <span className='fs-6'>/month</span>
-              </h3>
-
-              <div className='li-item-wrapper3'>
-                <li className='li-item my-4 '>Unlimited group pages</li>
-                <li className='li-item my-4'>Unlimited download page</li>
-                <li className='li-item my-4'>Unlimited page each group</li>
-                <li className='li-item my-4'>Customize group pages</li>
-                <li className='li-item my-4'>Customize group page name</li>
-                <li className='li-item my-4'>30 Days group page saved</li>
+          <div className='col col-md-6 col-xl-4  payment-element ps-5 py-4 pe-5 rounded bg-light  '>
+            <div className=''>
+              <div className='payment-header border-bottom'>
+                <h3>Premium</h3>
+                <p>Packet for Startup & Company</p>
               </div>
-              <div className=''>
-                <input
-                  className='btn btn-primary rounded-pill btn-lg fs-5 fw-bold  px-5 py-2'
-                  type='button'
-                  value='Start Free Trial'
-                />
+              <div className='payment-details '>
+                <h3 className='fs-1 carousel-fade mt-2'>
+                  ${checked ? '48' : '500'} <span className='fs-6'>/month</span>
+                </h3>
+
+                <div className='li-item-wrapper3'>
+                  <li className='li-item my-4 '>Unlimited group pages</li>
+                  <li className='li-item my-4'>Unlimited download page</li>
+                  <li className='li-item my-4'>Unlimited page each group</li>
+                  <li className='li-item my-4'>Customize group pages</li>
+                  <li className='li-item my-4'>Customize group page name</li>
+                  <li className='li-item my-4'>30 Days group page saved</li>
+                </div>
+                <div className=''>
+                  <input
+                    className='btn btn-primary rounded-pill btn-lg fs-5 fw-bold  px-5 py-2'
+                    type='button'
+                    value='Start Free Trial'
+                  />
+                </div>
               </div>
             </div>
           </div>

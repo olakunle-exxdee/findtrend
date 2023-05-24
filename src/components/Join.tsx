@@ -2,7 +2,7 @@ import React from 'react';
 
 const Join = () => {
   return (
-    <section className='bg-primary p-5 '>
+    <section id='contact' className='bg-primary p-5 '>
       <div className='hero-heading text-center p-5 '>
         <h1 className='header-font text-dark display-2 display-md-1 mt-5 '>
           Join us on email for

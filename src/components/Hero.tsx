@@ -12,28 +12,12 @@ export default function Hero() {
 
   useEffect(() => {
     const tl = gsap.timeline({
-      defaults: { ease: 'power1', stagger: 0.4, markers: true },
+      defaults: { ease: 'power1', duration: 0.5 },
     });
-    tl.fromTo(
-      HeadingRef.current,
-      { opacity: 0, y: 300 },
-      { opacity: 1, y: 0, duration: 1 }
-    );
-    tl.fromTo(
-      textRef.current,
-      { opacity: 0, y: 200 },
-      { opacity: 1, y: 0, duration: 1 }
-    );
-    tl.fromTo(
-      BtntRef.current,
-      { opacity: 0, y: 100 },
-      { opacity: 1, y: 0, duration: 1 }
-    );
-    tl.fromTo(
-      ImgRef.current,
-      { opacity: 0, y: 100 },
-      { opacity: 1, y: 0, duration: 1 }
-    );
+    tl.fromTo(HeadingRef.current, { opacity: 0, y: 300 }, { opacity: 1, y: 0 });
+    tl.fromTo(textRef.current, { opacity: 0, y: 200 }, { opacity: 1, y: 0 });
+    tl.fromTo(BtntRef.current, { opacity: 0, y: 100 }, { opacity: 1, y: 0 });
+    tl.fromTo(ImgRef.current, { opacity: 0, y: 100 }, { opacity: 1, y: 0 });
     // const el = textRef.current;
     // gsap.fromTo(
     //   el,
@@ -46,7 +30,7 @@ export default function Hero() {
     // );
   }, []);
   return (
-    <section className='animation height py-5 text-center'>
+    <section id='home' className='animation height py-5 text-center'>
       <div className='hero-heading '>
         <div className='' ref={HeadingRef}>
           <h1 className='header-font text-light display-2 display-md-1 '>
@@ -68,7 +52,7 @@ export default function Hero() {
           ref={BtntRef}
         />
       </div>
-      <div className=' container text-center hero-images  my-5 ' ref={ImgRef}>
+      <div className=' container text-center hero-images my-5' ref={ImgRef}>
         <div className='row'>
           <div className='col-xl-3 hero-image-wrapper'>
             <img className='img-fluid' src={tab4} alt='images' />
@@ -87,13 +71,3 @@ export default function Hero() {
     </section>
   );
 }
-
-//  <div className="hero-images my-5">
-//    <img className="img-fluid" src={tab1} alt="images" />
-
-//    <img className="img-fluid" src={tab2} alt="images" />
-
-//    <img className="img-fluid" src={tab3} alt="images" />
-
-//    <img className="img-fluid" src={tab4} alt="images" />
-//  </div>;

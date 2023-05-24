@@ -1,4 +1,3 @@
-import React from 'react';
 import Companies from './components/Companies';
 import Container from './components/Container';
 import Footer from './components/Footer';
@@ -8,7 +7,7 @@ import Join from './components/Join';
 import Open from './components/Open';
 import Plan from './components/Plan';
 import Platform from './components/Platform';
-import { ScrollTrigger } from 'gsap/all';
+import ScrollTrigger from 'gsap/dist/ScrollTrigger';
 import gsap from 'gsap';
 
 function App() {

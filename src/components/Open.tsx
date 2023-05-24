@@ -3,7 +3,7 @@ import tab5 from '../img/tab5.png';
 
 const Open = () => {
   return (
-    <section className='bg-primary p-5 text-center '>
+    <section id='about' className='bg-primary p-5 text-center '>
       <h1 className='header-font text-dark display-2 py-5  '>
         Open new tabs is sh*t
       </h1>
