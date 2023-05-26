@@ -15,58 +15,55 @@ gsap.registerPlugin(ScrollTrigger);
 
 function App() {
   useEffect(() => {
-    const arr = gsap.utils.toArray('.animation');
-    console.log(
-      arr.forEach((e: any) =>
-        console.log(e.getElementsByTagName('h1'), 'hello')
-      )
-    );
-    const tl = gsap.timeline({
-      defaults: { ease: 'power1', duration: 0.5, stagger: 0.1 },
-    });
-    arr.forEach((el: any) => {
-      tl.fromTo(
-        el.getElementsByTagName('h1'),
-        { opacity: 0, y: -100 },
-        {
-          opacity: 1,
-          y: 0,
-          scrollTrigger: {
-            trigger: el,
-            start: 'top 80%',
-            end: 'bottom 80%',
-            scrub: true,
-          },
-        }
-      );
-      tl.fromTo(
-        el.getElementsByTagName('img'),
-        { opacity: 0.8 },
-        {
-          opacity: 1,
-          stagger: 0.2,
+    const sections = gsap.utils.toArray('section');
 
-          scrollTrigger: {
-            trigger: el,
-            start: 'top 80%',
-            end: 'bottom 80%',
-            scrub: true,
-          },
-        }
+    sections.forEach((section: any, index: any) => {
+      const heading = section.querySelectorAll('h1');
+      const h1 = gsap.utils.toArray(heading);
+      const image = section.querySelectorAll('img');
+      const img = gsap.utils.toArray(image);
+
+      h1.forEach((h: any) => {
+        gsap.set(h, {
+          opacity: 0,
+          y: -50,
+          transformStyle: 'preserve-3d',
+        });
+      });
+      img.forEach((i: any) =>
+        gsap.set(i, {
+          opacity: 0,
+          rotateY: 15,
+          y: -100,
+          transformPerspective: 10000,
+          transformStyle: 'preserve-3d',
+          transformOrigin: 'center center',
+          transform: 'rotateX(0deg) rotateY(0deg) rotateZ(0deg)',
+        })
       );
-      tl.fromTo(
-        el,
-        { opacity: 1 },
-        {
-          opacity: 1,
-          scrollTrigger: {
-            trigger: el,
-            start: 'top 80%',
-            end: 'bottom 80%',
-            scrub: true,
-          },
-        }
-      );
+
+      const tl = gsap.timeline({
+        defaults: {
+          stagger: 0.2,
+        },
+        scrollTrigger: {
+          trigger: section,
+          start: () => 'top center',
+          end: () => `+=${window.innerHeight}`,
+          // toggleActions: 'play reverse play reverse',
+        },
+      });
+      tl.to(heading, {
+        opacity: 1,
+        y: 0,
+        duration: 0.2,
+      }).to(image, {
+        opacity: 1,
+        rotateY: -15,
+        duration: 1,
+        ease: 'elastic',
+        y: 0,
+      });
     });
   }, []);
   return (
