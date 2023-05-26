@@ -12,10 +12,10 @@ export default function Hero() {
 
   useEffect(() => {
     const tl = gsap.timeline({
-      defaults: { ease: 'power1', duration: 0.5 },
+      defaults: { ease: 'power1', duration: 0.5, stagger: 0.1 },
     });
-    tl.fromTo(HeadingRef.current, { opacity: 0, y: 300 }, { opacity: 1, y: 0 });
-    tl.fromTo(textRef.current, { opacity: 0, y: 200 }, { opacity: 1, y: 0 });
+    tl.fromTo(HeadingRef.current, { opacity: 0, y: 100 }, { opacity: 1, y: 0 });
+    tl.fromTo(textRef.current, { opacity: 0, y: 100 }, { opacity: 1, y: 0 });
     tl.fromTo(BtntRef.current, { opacity: 0, y: 100 }, { opacity: 1, y: 0 });
     tl.fromTo(ImgRef.current, { opacity: 0, y: 100 }, { opacity: 1, y: 0 });
     // const el = textRef.current;
@@ -30,7 +30,7 @@ export default function Hero() {
     // );
   }, []);
   return (
-    <section id='home' className='animation height py-5 text-center'>
+    <section id='home' className='height py-5 text-center'>
       <div className='hero-heading '>
         <div className='' ref={HeadingRef}>
           <h1 className='header-font text-light display-2 display-md-1 '>

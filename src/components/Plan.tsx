@@ -7,7 +7,7 @@ const Plan = () => {
     setChecked(!checked);
   };
   return (
-    <section id='pricing' className='bg-dark p-5 '>
+    <section id='pricing' className='bg-dark p-5 animation '>
       <h1 className=' company-heading2 text-light display-4 py-5 text-center '>
         Get your best deal
       </h1>

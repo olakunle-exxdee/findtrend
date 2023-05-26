@@ -2,7 +2,7 @@ import logo from '../img/logo.svg';
 
 const Header = () => {
   return (
-    <nav className='animation navbar navbar-expand-lg bg-dark navbar-dark p-3 '>
+    <nav className='navbar navbar-expand-lg bg-dark navbar-dark p-3 '>
       <a href='#home' className='navbar-brand'>
         <img src={logo} alt='logo' />
         Findtrend

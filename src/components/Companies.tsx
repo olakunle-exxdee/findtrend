@@ -16,7 +16,7 @@ import logo15 from '../img/logo15.png';
 import logo16 from '../img/logo16.png';
 const Companies = () => {
   return (
-    <section id='how' className='bg-light p-5 '>
+    <section id='how' className=' bg-light p-5 animation '>
       <div className='company-heading'>
         <h1 className='text-dark display-4 py-5  '>
           Findtrend helps you to increase your productivity and reduce your

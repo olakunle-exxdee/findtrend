@@ -12,7 +12,7 @@ import tweet2 from '../img/tweet 2.png';
 import tweet3 from '../img/tweet 3.png';
 const Platform = () => {
   return (
-    <section id='solution' className='bg-info p-5 '>
+    <section id='solution' className='bg-info p-5 animation'>
       <h1 className=' company-heading2 text-dark display-4 py-5 text-center '>
         All platform connect to Findtrend
       </h1>
