@@ -32,8 +32,23 @@ function App() {
           opacity: 1,
           y: 0,
           scrollTrigger: {
-            trigger: el.getElementsByTagName('h1'),
-            start: 'top 50%',
+            trigger: el,
+            start: 'top 80%',
+            end: 'bottom 80%',
+            scrub: true,
+          },
+        }
+      );
+      tl.fromTo(
+        el.getElementsByTagName('img'),
+        { opacity: 0.8 },
+        {
+          opacity: 1,
+          stagger: 0.2,
+
+          scrollTrigger: {
+            trigger: el,
+            start: 'top 80%',
             end: 'bottom 80%',
             scrub: true,
           },
@@ -41,7 +56,7 @@ function App() {
       );
       tl.fromTo(
         el,
-        { opacity: 0.4 },
+        { opacity: 1 },
         {
           opacity: 1,
           scrollTrigger: {
