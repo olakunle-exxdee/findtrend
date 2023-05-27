@@ -88,7 +88,7 @@ const Plan = () => {
                 <h3>Premium</h3>
                 <p>Packet for Startup & Company</p>
               </div>
-              <div className='payment-details '>
+              <div className='payment-details'>
                 <h3 className='fs-1 carousel-fade mt-2'>
                   ${checked ? '48' : '500'} <span className='fs-6'>/month</span>
                 </h3>

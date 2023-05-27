@@ -1,4 +1,4 @@
-const Container = ({ children }: { children: JSX.Element | JSX.Element[] }) => {
+const Container = ({ children }: { children: React.ReactNode }) => {
   return <div className=''>{children}</div>;
 };
 
